@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Lista de Contatos</title>
+</head>
+<body>
+    <div class="area">
+        <div class="container">
+            <header>
+                <span>Lista de Contatos</span>
+            </header>
+            <form id="formContatos">
+                <div class="labelArea">
+                    <input type="text" class="nome-contato" required />
+                    <label>Nome</label>
+                </div>
+                <div class="labelArea">
+                    <input type="text" name="telefone" onkeypress="mascara(this)" class="numero-contato" maxlength="15" required />
+                    <label>Contato</label>
+                </div>
+                <button type="submit">Add</button>
+            </form>
+            <div class="table-wrapper">
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Contato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
